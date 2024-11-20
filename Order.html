@@ -1,7 +1,7 @@
 <!Doctype html>
 <html>
 <head> <title>Michael's Tech Repair</title>
-  <!-- Code made by Hashim Al-Fatlawi -->
+  <!-- Code made by Hashim Al-Fatlawi and Modified by ABDULLAH JADHER  -->
 <style>
 nav p {
       display: inline-block;
@@ -53,6 +53,12 @@ nav p {
       text-align: center;
     }
 
+    input:invalid{
+      background: rgb(216, 145, 145);
+    }
+
+
+
    
 </style>
 </head>
@@ -75,20 +81,20 @@ nav p {
     <label for="nameinput"> 
 
          Name
-          <input type="text" name="name" placeholder="First and last name" id="nameinput"><br/>
+          <input type="text" name="name" placeholder="First and last name" id="nameinput" required><br/>
 </label>
         
         <p>
          <label for="emailinput"> 
 
             Email
-             <input type="text" name="email" placeholder="Email@gmail.com" id="emailinput"><br/>
+             <input type="email" name="email" placeholder="Email@gmail.com" id="emailinput" required><br/>
    </label></p>
 <p>
    <label for="phoneinput"> 
 
     Phone
-     <input type="text" name="phone" placeholder="Enter your phone number" id="phoneinput"><br/>
+     <input type="number" name="phone" placeholder="Enter your phone number" id="phoneinput" required><br/>
 </label></fieldset>
 </p>
           
@@ -96,7 +102,7 @@ nav p {
         <label>
         <fieldset> 
         <legend>Device</legend>
-        <select name="device"> 
+        <select name="device" required> 
 
             <option value=”PC”>Personal Computer</option> 
             <option value=”PL”>Personal Laptop</option> 
@@ -107,34 +113,30 @@ nav p {
           
           </select> 
         </fieldset>
-        </label>
-
-        <label for="b1">
-            <fieldset> 
-                <legend>condition</legend>
-                <p><input type="radio" name="ur" id="b1">Repair</p>
-                
-            </label>
-            <label for="b2">
-            <p><input type="radio" name="ur" id="b2">Check the device</p>
-        </label>
         
-        </fieldset>
+
+        
+            <fieldset> 
+               
+                <legend> Priority </legend>
+ 
+                <label><input type="radio" name="Request" value="Repair" required> Repair </label>
+ 
+                <label><input type="radio" name="Request" value="Check the Device" required> Check Device</label>
+           </fieldset>
 
         <fieldset>
             <legend>Additional Inforamtion</legend>
-            <p>Feedback,special requests,or other nforamtion</p>
-            <textarea>
-               
-            </textarea>
+           
+<legend> Additional Information </legend>
+ 
+<label for="Feedback">Feedback, special requests, or other information <br>
+ 
+<textarea name="Feedback" id="Feedback" cols="20" rows="3"></textarea></label>
         </fieldset>
          <fieldset>
-        <input type="submit" id="r" name="r">
+        <input type="submit" id="r">
     </fieldset>
-         
-        
-         
-        
          
         
         </form> 
