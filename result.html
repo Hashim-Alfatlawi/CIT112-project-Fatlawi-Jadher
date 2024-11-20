@@ -1,0 +1,91 @@
+<!Doctype html>
+<html>
+<head> <title>Michael's Tech Repair</title>
+  <!-- Code made by Abdullah Jadher -->
+<style>
+nav p {
+      display: inline-block;
+    }
+
+    nav {
+      
+      text-align: center;
+    }
+	
+	.am{background: #8ebbf1;}
+	
+.lm{margin:2%;}
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    h1 {
+      color: red;
+      text-align: center;
+    }
+
+    h2 {
+      color: red;
+    }
+
+    .container {
+      position: relative; 
+      margin: 2% 7%;
+      background: #FFFFF0;
+      padding: 50px;
+      padding-top: 150px;
+    }
+
+    body {
+      background-image: url("images/tech.jpg"); 
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    
+    footer{
+      color: white;
+      background:firebrick;
+      padding: 10px;
+      text-align: center;
+    }
+
+   
+</style>
+</head>
+<body>
+  <header><h1>Michael's Tech Repair</h1></header>
+  <nav class="am">
+    <p><a href="Home.html">Home</a></p>
+    <p><a href="price.html">Price</a></p>
+    <p><a href="Order.html">Order</a></p>
+    <p><a href="About Us.html">About Us</a></p>
+    
+ </nav>
+    <div class="container">
+        <script>
+            document.write("<h2> Repair Appointment</h2>");
+            
+            var ar = location.search.substring(1);
+            for(i=0; i<ar.length; i++){
+                ar = decodeURIComponent(ar);
+                ar = ar.replace("&", " <br> ");
+                ar = ar.replace("+", " ");
+                ar = ar.replace("=", ":");
+
+            }
+            document.write(ar);
+            
+            
+            </script>
+
+
+<footer>Need help? call us at (555) 4801-2203</footer>
+</div>
+</body>
+
+
+</html>
